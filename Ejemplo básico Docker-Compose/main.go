@@ -21,7 +21,7 @@ var bluetabers = []bluetaber{
 func getBluetabers(c *gin.Context) {
 	c.IndentedJSON(http.StatusOK, bluetabers)
 }
-
+	
 func main(){
   router := gin.Default()
   router.GET("/bluetabers",getBluetabers)
