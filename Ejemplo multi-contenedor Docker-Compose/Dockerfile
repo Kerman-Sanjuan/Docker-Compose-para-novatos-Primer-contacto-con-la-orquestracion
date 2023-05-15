@@ -2,14 +2,11 @@ FROM golang:1.20
 
 WORKDIR /src
 
-COPY ./main.go ./
-COPY ./go.mod ./
-COPY ./go.sum ./
+COPY ./src ./
 
-RUN go mod download
 
-RUN go build -o /docker-rest-api
+RUN go mod tidy
 
-EXPOSE 8000
+RUN go install
+EXPOSE 3000
 
-CMD ["/docker-rest-api"]
