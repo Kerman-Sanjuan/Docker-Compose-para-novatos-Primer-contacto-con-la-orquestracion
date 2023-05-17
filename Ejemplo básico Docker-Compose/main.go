@@ -13,9 +13,9 @@ type bluetaber struct {
 
 var bluetabers = []bluetaber{
 
-	{ID: "1", Nombre: "Kerman Sanjuan", Categoria: "Technician"},
-	{ID: "1", Nombre: "Tom", Categoria: "Boss"},
-	{ID: "1", Nombre: "Kaiet Iglesias", Categoria: "Experienced Technician"},
+	{ID: "1", Nombre: "Kerman", Categoria: "Technician"},
+	{ID: "1", Nombre: "Tom Doe", Categoria: "Boss"},
+	{ID: "1", Nombre: "John Doe", Categoria: "Technician"},
 }
 
 func getBluetabers(c *gin.Context) {
